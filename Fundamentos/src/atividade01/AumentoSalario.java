@@ -1,25 +1,29 @@
-package atividade01;
+package Atividade01;
 
 import java.util.Scanner;
 
-public class SalarioFuncionario {
+public class AumentoSalario {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        
-        System.out.println("Digite o salário do funcionários: ");
+
+        System.out.print("Digite o salário do funcionário: ");
         double salario = scanner.nextDouble();
-        
+
         double percentualAumento;
-        if(salario > 1350.00) {
+        if (salario > 1350.00) {
             percentualAumento = 0.10;
-        }else{
+        } else {
             percentualAumento = 0.15;
         }
-        
+
         double aumento = salario * percentualAumento;
         double novoSalario = salario + aumento;
-        
-        System.out.println("o valor do aumento é: R$ " + aumento);
-        System.out.println("o novo salario é: R$ " + novoSalario);
+
+        System.out.println("O valor do aumento é: R$ " + aumento);
+        System.out.println("O novo salário é: R$ " + novoSalario);
+
+        scanner.close();
     }
-}
+
+    }
+
